@@ -1,0 +1,28 @@
+
+# Basic For every JS deps
+node_modules/
+/.pnp
+.pnp.js
+
+# NextJS
+.next/
+
+# Environment Variable
+.env
+
+# Rust
+
+target/
+
+# production
+/build
+/dist
+
+# vercel
+.vercel 
+
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

@@ -1,0 +1,6 @@
+[user]
+	email = mooybot@gmail.com
+	name = mooyg
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential

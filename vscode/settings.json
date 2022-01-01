@@ -1,0 +1,28 @@
+{
+  "workbench.iconTheme": "eq-material-theme-icons-darker",
+  "editor.formatOnSave": true,
+  "editor.formatOnType": false,
+  "editor.fontSize": 14,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace",
+  "terminal.integrated.copyOnSelection": true,
+  "search.exclude": {
+    "**/*.map": true,
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/build": true,
+    "**/public": true
+  },
+  "files.exclude": {
+    "**/.cache": true,
+    "**/*.map": true,
+    "**/node_modules": true
+  },
+  "window.zoomLevel": 0,
+  "terminal.integrated.profiles.linux": {
+    "zsh": {
+      "path": "/usr/bin/zsh"
+    }
+  },
+  "terminal.integrated.defaultProfile.linux": "zsh"
+}

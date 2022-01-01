@@ -1,0 +1,2 @@
+alias c="code-insiders ."
+alias c="code-insiders "$@""
