@@ -1,6 +1,8 @@
 #!/usr/bin/bash
 #
 
+
+sudo apt install zsh
 # 1. Git Configuration
 
 cp gitignore ~/.gitignore_global  ## Adding .gitignore global
