@@ -29,8 +29,9 @@ mkdir ~/projects
 
 
 #INSTALL VS CODE EXTENSIONS 
-cat vscode/extensions | while read extension || [[ -n $extension ]]; do
+cat vscode/extensions | while read extension; do 
 code-insiders --install-extension $extension --force
+done
 
 # Install Volta
 
