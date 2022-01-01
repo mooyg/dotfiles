@@ -5,7 +5,7 @@
 sudo apt install zsh
 # 1. Git Configuration
 
-cp gitignore ~/.gitignore_global  ## Adding .gitignore global
+cp .gitignore ~/.gitignore_global  ## Adding .gitignore global
 git config --global core.excludesfile "${HOME}/.gitignore_global"
 
 # 2. Install Oh-My-Zsh & custom aliases
@@ -37,6 +37,9 @@ mkdir ~/projects
 if test ! $(which volta); then
   echo "Installing volta"
   curl https://get.volta.sh | bash
+  sleep 1
+  volta install node@latest
+
 else 
     echo "VOLTA ALREADY INSTALLED"
 fi
