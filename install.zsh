@@ -3,16 +3,21 @@
 
 
 sudo apt install zsh
+
+
+
 # 1. Git Configuration
 
 cp .gitignore ~/.gitignore_global  ## Adding .gitignore global
 git config --global core.excludesfile "${HOME}/.gitignore_global"
+cp git/.gitconfig ~/.gitconfig
 
 # 2. Install Oh-My-Zsh & custom aliases
 
 ZSH=~/.oh-my-zsh
 
 curl -L http://install.ohmyz.sh | sh
+
 
 # Install ZSH ALIASES
 cp oh-my-zsh/aliases ~/.aliases
@@ -54,3 +59,6 @@ echo "npm --version: $(npm --version)"
 if [ -d ~/dotfiles ]; then
   sudo rm -R ~/dotfiles
 fi
+
+
+chsh -s $(which zsh)
