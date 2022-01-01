@@ -29,17 +29,8 @@ mkdir ~/projects
 
 
 #INSTALL VS CODE EXTENSIONS 
-NEWLINE=$'\n'
-
-if read -q "choice?${NEWLINE}do you want to install the visual studio code extensions listed below?${NEWLINE}$(cat vscode/extensions.linux)?${NEWLINE}(y/n): "; then
-  echo $NEWLINE
-
-  cat vscode/extensions | while read extension || [[ -n $extension ]]; do
-    code-insiders --install-extension $extension --force
-  done
-else
-  echo " skipping."
-fi
+ cat vscode/extensions | while read extension || [[ -n $extension ]]; do
+  code-insiders --install-extension $extension --force
 
 # Install Volta
 
