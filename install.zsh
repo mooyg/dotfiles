@@ -54,6 +54,9 @@ fi
 echo "node --version: $(node --version)"
 echo "npm --version: $(npm --version)"
 
+## Install Postgres 
+sudo apt update
+sudo apt install postgresql postgresql-contrib
 
 ## Remove cloned dotfiles from system
 if [ -d ~/dotfiles ]; then
