@@ -32,6 +32,8 @@ cp oh-my-zsh/zshrc ~/.zshrc
 # Create projects directory
 mkdir ~/projects
 
+# Install VS Code 
+sudo snap install code-insiders
 
 #INSTALL VS CODE EXTENSIONS 
 cat vscode/extensions | while read extension; do 
