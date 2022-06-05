@@ -14,7 +14,7 @@ cp git/.gitconfig ~/.gitconfig
 
 # 2. Install Oh-My-Zsh & custom aliases
 
-ZSH=~/.oh-my-zsh
+ZSH=$HOME/.oh-my-zsh
 
 curl -L http://install.ohmyz.sh | sh
 
@@ -30,7 +30,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 cp oh-my-zsh/zshrc ~/.zshrc
 
 # Create projects directory
-mkdir ~/projects
+mkdir $HOME/projects  
 
 # Install VS Code 
 sudo snap install code-insiders
